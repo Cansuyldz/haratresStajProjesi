@@ -1,0 +1,52 @@
+.bg-yontem {
+    position: absolute;
+    height: 500px;
+    background: url("../../yöntem/img/bg-yontem.png");
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    visibility: inherit;
+}
+
+.bg-yontem .layer-one {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.bg-yontem .layer-two {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width:768px) {
+    h2.timeline-title {
+        font-size: 30px;
+        color: #ff5800;
+        font-weight: bold;
+        line-height: 1;
+    }
+    h3.timeline-title {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+    p {
+        font-size: 18px;
+    }
+    .heading-area .sub-title {
+        font-size: 22px;
+    }
+}

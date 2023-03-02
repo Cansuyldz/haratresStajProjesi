@@ -1,0 +1,61 @@
+.bg-vizyon-misyon {
+    position: absolute;
+    background: url("../../vizyon-misyon/img/Vizyonmisyonhead.png");
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    visibility: inherit;
+}
+
+.about-sec .title {
+    font-size: 60px;
+    font-family: 'Poppins' !important;
+    color: #001036;
+    font-weight: bold;
+    width: 95%;
+    margin-bottom: 50px;
+}
+
+.about-sec-prg {
+    font-family: Roboto, sans-serif;
+    font-size: 26px;
+    color: #202020;
+    margin-bottom: 40px;
+    word-spacing: 2px;
+    line-height: 1.5;
+}
+
+h2.half-section-title {
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.mb-5 {
+    margin-bottom: 50px;
+}
+
+.about-img {
+    width: 100%;
+}
+
+.hover-effect img {
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .bg-vizyon-misyon {
+        background-position: 10%;
+    }
+    .about-sec-prg {
+        padding: 0 20px;
+        font-size: 20px;
+    }
+    .about-sec .title {
+        font-size: 49px;
+    }
+}

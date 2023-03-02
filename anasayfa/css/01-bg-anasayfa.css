@@ -1,0 +1,208 @@
+.bg-anasayfa {
+    position: absolute;
+    height: 500px;
+    background: url("../../anasayfa/img/3.png");
+    opacity: 0.7;
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.eticaret-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 15px 0 25px;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+}
+
+.eticaret-prg {
+    line-height: 29px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 18px;
+}
+
+.kariyer-title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+    letter-spacing: 5px;
+    color: #fff;
+}
+
+.bize-ulasin-title {
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+    color: #fff;
+}
+
+.kariyer-prg,
+.bize-ulasin-prg {
+    font-size: 24px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    color: #fff;
+    margin: 0 0 25px;
+}
+
+.kariyer-btn,
+.bize-ulasin-btn {
+    background: #fff;
+    color: #001036;
+    font-size: 18px;
+    padding: 12px 25px;
+    border-radius: 5px;
+    letter-spacing: .5px;
+}
+
+.kariyer-btn:hover,
+.bize-ulasin-btn {
+    cursor: pointer;
+}
+
+.feature-item-title {
+    margin: 1.5rem 0 .8rem;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
+    font-size: 22px;
+}
+
+.sap {
+    font-size: 359% !important;
+}
+
+.sap-2 {
+    font-size: 370% !important;
+}
+
+.tp-caption-prg {
+    font-size: 22px !important;
+}
+
+.heading-prg {
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+    font-size: 18px;
+}
+
+.heading-area-prg {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+}
+
+.centered-content {
+    align-items: center;
+    display: flex;
+}
+
+.rakamlar-rotate-color {
+    color: #001036;
+}
+
+.gradient-bg2-prg {
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+    font-size: 18px;
+    color: #fff !important;
+}
+
+.services-icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .mobile-centered {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+    .sap {
+        width: 100% !important;
+        font-size: 290% !important;
+        text-align: justify !important;
+    }
+    .sap-2 {
+        font-size: 300% !important;
+        text-align: center !important;
+    }
+    .btn.btn-large.btn-rounded.btn-pink.btn-hvr-blue.mt-3 {
+        display: none;
+    }
+    span.mobile-inline-block {
+        display: inline-block;
+    }
+}
+
+@media (max-width:768px) {
+    #services .col-6 {
+        margin-bottom: 25px;
+    }
+    .gradient-bg2 .col-6 {
+        margin-bottom: 25px;
+    }
+    .btn.btn-large.btn-rounded.btn-pink.btn-hvr-blue.mt-3 {
+        display: none;
+    }
+    .sap {
+        font-size: 296% !important;
+        text-align: left !important;
+        width: 100% !important;
+    }
+    .sap-2 {
+        font-size: 300% !important;
+        text-align: left !important;
+    }
+    .sap-prg {
+        font-weight: 400 !important;
+        text-align: left !important;
+    }
+    .heading-area-prg {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:412px) {
+    .sap {
+        font-size: 217% !important;
+    }
+    .sap-2 {
+        font-size: 232% !important;
+    }
+    .sap-prg {
+        top: 15%;
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width:375px) {
+    .sap {
+        font-size: 200% !important;
+        text-align: left !important;
+    }
+    .sap-2 {
+        font-size: 200% !important;
+        text-align: left !important;
+    }
+    .sap-prg {
+        margin-top: 20px !important;
+        font-weight: 400 !important;
+        text-align: left !important;
+        padding: 15px !important;
+    }
+    .feature-item-title {
+        font-size: 25px;
+    }
+    .gradient-bg2-prg {
+        font-size: 20px;
+    }
+}

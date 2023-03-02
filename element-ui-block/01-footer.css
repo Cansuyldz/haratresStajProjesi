@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* ===================================
+     UI-Block-01
+==================================== */
+
+.ui-block-01.footer {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.ui-block-01.footer.footer,
+.ui-block-01.footer.footer .container {
+    background-color: #001036;
+}
+
+.ui-block-01.footer a,
+a:hover,
+a:focus {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.ui-block-01.footer.footer .f-sec1 p {
+    color: #888888;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.ui-block-01.footer.footer .f-sec1 a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.ui-block-01.footer.footer h4 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.ui-block-01.footer.footer .title {
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.ui-block-01.footer.footer .f-sec2 ul {
+    margin-top: 35px;
+    padding-left: 0;
+}
+
+.ui-block-01.footer.footer .f-sec2 ul li {
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    line-height: 2rem;
+}
+
+.ui-block-01.footer.footer .f-sec2 ul li a {
+    text-decoration: none;
+    color: #888888;
+}
+
+.ui-block-01.footer.footer .f-sec2 ul li i {
+    margin-right: 5px;
+}
+
+.ui-block-01.footer.footer .f-sec3 .foot-tag-list {
+    padding-top: 35px;
+}
+
+.ui-block-01.footer.footer .f-sec3 .foot-tag-list span {
+    padding: 5px 20px;
+    border: 1px solid #a9a9a9;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #a9a9a9;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.ui-block-01.footer.footer .f-sec3 h4 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    padding-top: 20px;
+}
+
+.ui-block-01.footer.footer .footer-container {
+    border-bottom: dashed 3px #565659;
+    padding-bottom: 50px;
+}
+
+.ui-block-01.footer .footer_notes p {
+    padding-top: 50px;
+    color: #888888;
+}
+
+.ui-block-01.footer .social-icons-simple li {
+    display: inline-block;
+    padding: 15px 0 15px 0;
+    color: #000000;
+}
+
+.ui-block-01.footer .social-icons-simple li a {
+    height: 38px;
+    width: 38px;
+    border-radius: 30px;
+    color: #000000;
+    background: transparent;
+    line-height: 38px;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid transparent;
+}
+
+.ui-block-01.footer .linkedin-bg-hvr:hover {
+    background: #4267B2 !important;
+    color: #fff !important;
+    border: 1px solid transparent !important;
+}
+
+.ui-block-01.footer .youtube-bg-hvr:hover {
+    background: #ff0000 !important;
+    color: #fff !important;
+    border: 1px solid transparent !important;
+}
+
+.ui-block-01.footer .instagram-bg-hvr:hover {
+    color: #FFFFFF;
+    background: -webkit-gradient(linear, left top, left bottom, from(#aa2fb5), color-stop(93%, #f1762c))!important;
+    background: -o-linear-gradient(top, #aa2fb5 0%, #f1762c 93%)!important;
+    background: linear-gradient(to bottom, #aa2fb5 0%, #f1762c 93%)!important;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}

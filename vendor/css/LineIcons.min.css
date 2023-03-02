@@ -1,0 +1,48 @@
+.lni-wallet:before {
+    content: "\e9a6"
+}
+
+.lni-heart:before {
+    content: "\e95e"
+}
+
+.lni-briefcase:before {
+    content: "\eabf"
+}
+
+.lni-bulb:before {
+    content: "\e96f"
+}
+
+.lni-handshake:before {
+    content: "\e972"
+}
+
+.lni-world:before {
+    content: "\e973"
+}
+
+.lni-tab:before {
+    content: "\e922"
+}
+
+@font-face {
+    font-family: LineIcons;
+    src: url(../fonts/LineIcons.eot?y2l643);
+    src: url(../fonts/LineIcons.eot?y2l643#iefix) format('embedded-opentype'), url(../fonts/LineIcons.ttf?y2l643) format('truetype'), url(../fonts/LineIcons.woff?y2l643) format('woff'), url(../fonts/LineIcons.svg?y2l643#LineIcons) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+[class*=" lni-"],
+[class^=lni-] {
+    font-family: LineIcons!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}

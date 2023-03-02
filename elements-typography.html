@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Invoice</title>
+    <style>
+        @page {
+            margin: 17px 30px;
+            size: letter;
+            /*or width x height 150mm 50mm*/
+        }
+        
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        a {
+            color: #5D6975;
+            text-decoration: underline;
+        }
+        
+        body {
+            position: relative;
+            width: 21cm;
+            margin: 0 auto;
+            color: #001028;
+            background: #FFFFFF;
+            font-family: Arial, sans-serif;
+            font-size: 10.5px;
+            height: 100%;
+        }
+        
+        .content {
+            margin: 0 55px 0 20px;
+        }
+        
+        .top-left {
+            vertical-align: top;
+            width: 33%;
+            display: inline-block;
+        }
+        
+        .top-center {
+            vertical-align: top;
+            width: 33%;
+            display: inline-block;
+        }
+        
+        .top-right {
+            vertical-align: top;
+            width: 33%;
+            display: inline-block;
+        }
+        
+        .content-wrapper {
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        
+        .content-wrapper-2 {
+            text-align: center;
+        }
+        
+        .content-wrapper-2 h3 {
+            font-weight: bold;
+            font-size: 1.4em;
+            margin: 0;
+        }
+        
+        .information {
+            margin: 0;
+            padding: 1px 0;
+            text-align: left !important;
+            font-size: .85em;
+            color: #666666;
+        }
+        
+        .table-wrapper table tr {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .table-wrapper table {
+            border-color: #000;
+            border-collapse: collapse;
+        }
+        
+        .table-wrapper table tr td {
+            padding: 2px 3px;
+            margin: 0;
+            text-align: center;
+            font-size: .9em;
+            color: #666666;
+            border-color: #000;
+        }
+        
+        .center-content table tr td.nowrap {
+            white-space: nowrap;
+        }
+        
+        .center-content table tr.header td {
+            border: 1px solid black;
+            color: #666666;
+            text-align: center;
+        }
+        
+        .center-content table tr.content-row td {
+            border-bottom: 1px solid black;
+            font-size: .88em;
+            color: #666666;
+        }
+        
+        .center-content table tr.footer td {
+            border-bottom: 1px solid black;
+            font-size: .85em;
+            color: #666666;
+        }
+        
+        .content-wrapper-3 {
+            width: 49.5%;
+            display: inline-block;
+            vertical-align: top;
+        }
+        
+        .content-wrapper-3 .table-wrapper table tr td {
+            text-align: right;
+        }
+        
+        .content-wrapper-3 .table-wrapper table.amounts {
+            float: right;
+            width: 100%;
+        }
+        
+        .content-wrapper-3 .table-wrapper table.amounts tr td {
+            border: 2px solid black
+        }
+        
+        .content-wrapper-4 {
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    #set ($isCompany = $!ctx.order.billingAddress.taxOffice) #foreach($entryContext in $ctx.invoiceEntryList)
+    <div class="content">
+        <div class="top-left">
+            <div class="content-wrapper">
+                <p class="information">
+                    ${ctx.companyName}
+                </p>
+                <p class="information">
+                    ${ctx.companyAddress}
+                </p>
+                <p class="information">
+                    Tel: ${ctx.companyPhone} Fax: ${ctx.companyFax}
+                </p>
+                <p class="information">
+                    Web Sitesi: ${ctx.webUrl}
+                </p>
+                <p class="information">
+                    E-Posta: ${ctx.companyMail}
+                </p>
+                <p class="information">
+                    Vergi Dairesi: ${ctx.taxOffice}
+                </p>
+                <p class="information">
+                    VKN: ${ctx.taxNumber}
+                </p>
+                <p class="information">
+                    MERSISNO: ${ctx.mersisNumber}
+                </p>
+                <p class="information">
+                    TICARETSICILNO: ${ctx.tradeRegisterNumber}
+                </p>
+            </div>
+            <div style="height: 2cm;"></div>
+            <div class="content-wrapper">
+                <p class="information">
+                    <b>SAYIN</b>
+                </p>
+                <p class="information">
+                    #if($ctx.order.billingAddress.taxOffice && $!ctx.order.billingAddress.taxOffice.empty) ${ctx.order.billingAddress.companyName} #else ${ctx.order.billingAddress.firstName} ${ctx.order.billingAddress.lastName} #end
+                </p>
+                <p class="information">
+                    ${ctx.order.billingAddress.line1}
+                </p>
+                <p class="information">
+                    ${ctx.order.billingAddress.county.name} / ${ctx.order.billingAddress.city.name}
+                </p>
+                <p class="information">
+                    Tel: #if ($ctx.order.billingAddress.phone) ${ctx.order.billingAddress.phone} #end
+                </p>
+                #if($ctx.order.billingAddress.taxOffice && $!ctx.order.billingAddress.taxOffice.empty)
+                <p class="information">
+                    Vergi Dairesi: ${ctx.order.billingAddress.taxOffice}
+                </p>
+                #end
+                <p class="information">
+                    #if($ctx.order.billingAddress.taxOffice && $!ctx.order.billingAddress.taxOffice.empty) VKN:${ctx.order.billingAddress.taxNumber} #elseif($ctx.order.billingAddress.taxIdentityNumber && $!ctx.order.billingAddress.taxIdentityNumber.empty)) TCKN:${ctx.order.billingAddress.taxIdentityNumber}
+                    #else TCKN:11111111111 #end
+                </p>
+            </div>
+            <div class="content-wrapper-2">
+                <p class="information" style="margin-top: .2cm;">
+                    <b>ETTN:</b>
+                </p>
+            </div>
+        </div>
+        <div class="top-center">
+            <div class="content-wrapper-2">
+                <img src="https://w17iocgx1rrs05xsjj0hfzr.blob.core.windows.net/media/static/hazine-maliye.png" style="width: 3cm;margin-top:10px" />
+            </div>
+            <div class="content-wrapper-2">
+                <h3>e-Arşiv Fatura</h3>
+            </div>
+            <div class="content-wrapper-2">
+                <img src="https://w17iocgx1rrs05xsjj0hfzr.blob.core.windows.net/media/static/ltb-sign.png" style="width: 3cm;" />
+            </div>
+        </div>
+        <div class="top-right">
+            <div class="content-wrapper-2">
+                <img src="https://w17iocgx1rrs05xsjj0hfzr.blob.core.windows.net/media/static/ltb-logo.png" style="width: 3cm;margin-top:10px" />
+            </div>
+            <div class="content-wrapper-2" style="margin-top: 0.5cm;">
+                <div class="table-wrapper">
+                    <table cellspacing="0" border="1px" class="wrapper">
+                        <tr>
+                            <td>Web Adresi:</td>
+                            <td>${ctx.webUrl}</td>
+                        </tr>
+                        <tr>
+                            <td>Ödeme Şekli:</td>
+                            <td>${ctx.paymentMode}</td>
+                        </tr>
+                        <tr>
+                            <td>Ödeme Tarihi:</td>
+                            <td>${ctx.orderDate}</td>
+                        </tr>
+                        <tr>
+                            <td>Gönderim Tarihi:</td>
+                            <td>${ctx.orderDate}</td>
+                        </tr>
+                        <tr>
+                            <td>Gönderi Taşıyan VKN:</td>
+                            <td>9170014856</td>
+                        </tr>
+                        <tr>
+                            <td>Gönderi Taşıyan Ünvan :</td>
+                            <td>Ünsped Paket Servisi San. ve Ticaret A.Ş.</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="content-wrapper-2" style="margin-top: 0.5cm;float:right">
+                <div class="table-wrapper">
+                    <table cellspacing="0" border="1px">
+                        <tr>
+                            <td><b>Özellestirme No:</b></td>
+                            <td>TR1.2</td>
+                        </tr>
+                        <tr>
+                            <td><b>Senaryo:</b></td>
+                            <td>EARSIVFATURA</td>
+                        </tr>
+                        <tr>
+                            <td><b>Fatura Tipi:</b></td>
+                            <td>SATIS</td>
+                        </tr>
+                        <tr>
+                            <td><b>Belge No:</b></td>
+                            <td>${ctx.order.invoiceNumber}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Düzenleme Tarihi:</b></td>
+                            <td>${ctx.invoiceDate}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Düzenleme Zamanı:</b></td>
+                            <td>${ctx.invoiceTime}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Siparis No:</b></td>
+                            <td>${ctx.orderCode}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Siparis Tarihi:</b></td>
+                            <td>${ctx.orderDate}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="center-content" style="margin-top: 10px;">
+            <table cellspacing="0" style="border-collapse: collapse; border-color: #000;">
+                <tr class="header">
+                    <td><b>Sıra No</b></td>
+                    <td width="12%"><b>Barkod No</b></td>
+                    <td class="nowrap" width="25%"><b>Mal Hizmet</b></td>
+                    <td><b>Miktar</b></td>
+                    <td width="10%"><b>Birim Fiyat</b></td>
+                    <td><b>İskonto Oranı</b></td>
+                    <td><b>İskonto Tutarı</b></td>
+                    <td><b>KDV Oranı</b></td>
+                    <td><b>KDV Tutarı</b></td>
+                    <td width="7%"><b>Diğer Vergiler</b></td>
+                    <td width="7%"><b>Mal Hizmet Tutari</b></td>
+                </tr>
+                #set($index = 0) #foreach($entry in $entryContext.orderEntryList)
+                <tr class="content-row">
+                    #set($index = $index + 1)
+                    <td>${index}</td>
+                    <td>${entry.product.ean}</td>
+                    <td class="nowrap">
+                        #if($entry.product.name.length() > 35) #set ($name= ${entry.product.name.substring(0, 35)}) #else #set ($name= ${entry.product.name}) #end ${name}
+                    </td>
+                    <td>${entry.quantity} Adet</td>
+                    <td>
+                        #if($entry.basePrice) ${entry.basePrice.formattedValue.replace("TRY", "TL")} #end
+                    </td>
+                    <td>
+                        #if ($entry.discountRate && $entry.discountRate.value > 0.0) %${entry.discountRate.formattedValue.replace("TRY", "").replace("₺","").replace("TL","")} #end
+                    </td>
+                    <td>
+                        #if ($entry.entryLevelDiscount && $entry.entryLevelDiscount.value > 0.0) ${entry.entryLevelDiscount.formattedValue.replace("TRY", "TL")} #end
+                    </td>
+                    <td>
+                        #if ($entry.taxRate && $entry.taxRate.value > 0.0) %${entry.taxRate.formattedValue.replace("TRY", "").replace("₺","").replace("TL","")} #end
+                    </td>
+                    <td>
+                        #if ($entry.taxAmount && $entry.taxAmount.value > 0.0) ${entry.taxAmount.formattedValue.replace("TRY", "TL")} #end
+                    </td>
+                    <td></td>
+                    <td style="text-align:right">
+                        #if ($entry.totalPrice && $entry.totalPrice.value > 0.0) ${entry.totalPrice.formattedValue.replace("TRY", "TL")} #end
+                    </td>
+                </tr>
+                #end
+                <tr class="footer">
+                    <td colspan="3">Nakli Yekün :</td>
+                    <td colspan="5">${entryContext.quantity}</td>
+                    <td colspan="3" style="text-align:right">${entryContext.totalPrice} TL</td>
+                </tr>
+            </table>
+            #if($entryContext.index == $ctx.invoiceEntryList.size())
+            <div class="content-wrapper-3" style="margin-top: 0.5cm;">
+                Toplam Miktar : ${ctx.order.quantity}
+            </div>
+            <div class="content-wrapper-3" style="margin-top: 0.5cm;">
+                <div class="table-wrapper">
+                    <table cellspacing="0" class="amounts">
+                        <tr>
+                            <td><b>Mal Hizmet Toplam Tutari</b></td>
+                            <td>${ctx.order.totalPrice.formattedValue.replace("TRY", "TL")}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Toplam İskonto</b></td>
+                            <td>
+                                ${ctx.order.totalDiscount.formattedValue.replace("TRY", "TL")}
+                            </td>
+                        </tr>
+                        #set ($index = 0) #foreach($exclusiveAmount in $ctx.orderExclusiveAmounts)
+                        <tr>
+                            <td><b>KDV Matrahı</b></td>
+                            <td>${exclusiveAmount.formattedValue.replace("TRY", "TL")}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Hesaplanan KDV(%$ctx.order.taxes[$index].percentage)</b></td>
+                            <td>
+                                $ctx.order.taxes[$index].value.formattedValue.replace("TRY", "TL")
+                            </td>
+                        </tr>
+                        #set ($index = $index+1) #end
+                        <tr>
+                            <td><b>Vergiler Dahil Toplam Tutar</b></td>
+                            <td>${ctx.order.totalPrice.formattedValue.replace("TRY", "TL")}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Ödenecek Tutar</b></td>
+                            <td>${ctx.order.totalPrice.formattedValue.replace("TRY", "TL")}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            #end
+            <div class="content-wrapper-4" style="margin-top: 0.5cm;">
+                <p class="information"><b>Vade:</b> ${ctx.totalPriceFormat}</p>
+                <br/>
+                <p class="information"><b>E-Arşiv İzni Kapsamında Elektronik Olarak iletilmiştir.</b></p>
+                <p class="information"><b>İrsaliye yerine geçer</b></p>
+                <br/>
+                <br/>
+                <p class="information"><b>Mal iade Edilen :</b></p>
+                <p class="information">Adı Soyadı:</p>
+                <p class="information">Adresi:</p>
+                <p class="information">İmzası:</p>
+                <br/>
+                <p class="information"><b>iade Edilen Malın:</b></p>
+                <p class="information">Cinsi:</p>
+                <p class="information">Miktarı:</p>
+                <p class="information">Birim Fiyat:</p>
+                <p class="information">Tutar:</p>
+            </div>
+        </div>
+    </div>
+    #end
+</body>
+
+</html>

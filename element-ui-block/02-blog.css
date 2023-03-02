@@ -1,0 +1,211 @@
+/* ===================================
+        UI-Block-02
+==================================== */
+
+.ui-block-02.blog .font-primary {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ui-block-02.blog .font-secondary {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.ui-block-02.blog.bg-yellow,
+.hvr-bg-yellow:hover {
+    background-color: #ff5901;
+}
+
+.ui-block-02.blog.half-section {
+    width: 100%;
+}
+
+.ui-block-02.blog.half-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.ui-block-02.blog .split-container-setting {
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: 96px;
+}
+
+.ui-block-02.blog .main-title {
+    position: relative;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.ui-block-02.blog .main-title h5 {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1.1rem;
+    color: #212622;
+}
+
+.ui-block-02.blog .split-container-setting .main-title p {
+    max-width: 100%;
+    margin: 0;
+}
+
+.ui-block-02.blog.bg-change .split-container-setting .main-title h5,
+.bg-change .split-container-setting .main-title h2,
+.ui-block-02.blog.bg-change .split-container-setting h6,
+.bg-change .split-container-setting p {
+    color: #ffffff;
+}
+
+.ui-block-02.blog .split-container-setting.style-two {
+    max-width: 460px;
+    margin-left: 100px;
+    margin-right: auto;
+}
+
+.ui-block-02.blog .split-container-setting.style-three {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.ui-block-02.blog .btn-setting {
+    padding: 9px 34px;
+    width: auto;
+    display: inline-block;
+    font-weight: 400;
+    line-height: 25px;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    -webkit-border-radius: 36px;
+    border-radius: 36px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 1px solid #acacac;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease !important;
+}
+
+.ui-block-02.blog .btn-pink {
+    border-color: #e57bff;
+    background-color: #e57bff;
+    color: #ffffff;
+}
+
+.ui-block-02.blog .btn-blue {
+    border-color: #84a1d2;
+    background-color: #84a1d2;
+    color: #ffffff;
+}
+
+.ui-block-02.blog .btn-hvr-yellow:focus,
+.btn-hvr-pink:focus,
+.btn-hvr-blue:focus,
+.btn-hvr-whatsapp:focus {
+    color: #ffffff;
+}
+
+.ui-block-02.blog .btn-hvr-pink:after {
+    background-color: #e57bff;
+}
+
+.ui-block-02.blog .btn-hvr-pink:hover,
+.btn-hvr-pink:focus {
+    border-color: #e57bff;
+    color: #ffffff;
+}
+
+.ui-block-02.blog .btn-hvr-up:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    z-index: -1;
+}
+
+.ui-block-02.blog .btn-hvr-up:hover:after,
+.btn-hvr-up:active:after,
+.btn-hvr-up:focus:after {
+    height: 100%;
+}
+
+.ui-block-02.blog .hover-effect::before,
+.ui-block-02.blog .hover-effect::after {
+    content: "";
+    background: #fff;
+    height: 0;
+    width: 0;
+    z-index: 1;
+    position: absolute;
+    -webkit-transition-duration: 1.3s !important;
+    -o-transition-duration: 1.3s;
+    transition-duration: 1.3s !important;
+}
+
+.ui-block-02.blog .hover-effect::before {
+    right: 0;
+    opacity: 1;
+    top: 0;
+}
+
+.ui-block-02.blog .hover-effect::after {
+    bottom: 0;
+    opacity: .7;
+    left: 0;
+}
+
+.ui-block-02.blog .hover-effect:hover::after,
+.ui-block-02.blog .hover-effect:hover::before {
+    height: 100%;
+    opacity: 0;
+    width: 100%;
+}
+
+@media (max-width: 1280px) and (min-width: 992px) {
+    .ui-block-02.blog .about-img {
+        height: 580px;
+    }
+    .ui-block-02.blog .image img.about-img {
+        height: 580px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .ui-block-02.blog .about-img {
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .ui-block-02.blog .split-container-setting.style-three {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ui-block-02.blog .split-container-setting,
+    .ui-block-02.blog .split-container-setting.style-two,
+    .ui-block-02.blog .split-container-setting.style-three {
+        padding: 7.5rem 0;
+        max-width: 720px;
+        margin: 0 auto;
+    }
+    .ui-block-02.blog .about-img,
+    .ui-block-02.blog .image img.about-img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ui-block-02.blog .split-container-setting,
+    .ui-block-02.blog .split-container-setting.style-two,
+    .ui-block-02.blog .split-container-setting.style-three {
+        max-width: 540px;
+        padding: 4.5rem 0;
+    }
+}

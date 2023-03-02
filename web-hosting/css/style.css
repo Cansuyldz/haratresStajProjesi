@@ -1,0 +1,114 @@
+.testimonial-section .text-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    background: #00b7ff;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #0176ff, #00b7ff);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #0176ff, #00b7ff);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.testimonial-heading h5 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.testimonial-heading h2 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.carousel-section .testimonials p {
+    text-align: center;
+    color: #ffffff;
+    width: 60%;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 40px auto;
+}
+
+.carousel-section .testimonials h5 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-top: 25px;
+}
+
+.testimonial-section .text-section .text-area {
+    padding: 120px 0;
+    text-align: center;
+}
+
+.testimonial-section .carousel-section {
+    background-color: #002450;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-section .testimonial-image {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: auto;
+}
+
+.carousel-section .testimonials .quote i {
+    color: #fff;
+    font-style: italic;
+    font-size: 20px;
+}
+
+
+/* ===================================
+   Media Queries
+====================================== */
+
+@media (max-width: 1600px) and (min-width: 1280px) {
+    #particles-js {
+        height: 100vh;
+    }
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    /* Testimonial */
+    .testimonial-heading h5 {
+        font-size: 38px;
+    }
+    .testimonial-heading h2 {
+        font-size: 48px;
+    }
+    .carousel-section .testimonials p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    /* Testimonials */
+    .testimonial-heading h5 {
+        font-size: 38px;
+    }
+    .testimonial-heading h2 {
+        font-size: 48px;
+    }
+    .testimonials {
+        padding: 4rem 0;
+    }
+    .testimonial-section .text-section .text-area {
+        padding: 100px 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* Testimonials */
+    .testimonial-section .text-section .text-area {
+        padding: 0;
+    }
+    .testimonial-heading h5 {
+        font-size: 24px;
+    }
+    .testimonial-heading h2 {
+        font-size: 32px;
+    }
+}

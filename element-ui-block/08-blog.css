@@ -1,0 +1,166 @@
+/* ===================================
+        UI-Block-08
+==================================== */
+
+.ui-block-08.blog .main-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.ui-block-08.blog .alt-font {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ui-block-08.blog .heading {
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    color: #202020;
+    font-weight: bold;
+    width: 95%;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.ui-block-08.blog .text {
+    font-family: Roboto, sans-serif;
+    font-weight: lighter;
+    font-size: 16px;
+    color: #202020;
+    margin-bottom: 40px;
+}
+
+.ui-block-08.blog .text-orange {
+    color: #fb4700;
+}
+
+.ui-block-08.blog .bg-darkblue {
+    background: #001036;
+}
+
+.ui-block-08.blog .sponsor-tags .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.ui-block-08.blog .sponsor-tags .item img {
+    width: 80%;
+    display: inline-block;
+}
+
+.ui-block-08.blog .blog-area {
+    padding-top: 80px;
+    margin: auto;
+}
+
+.ui-block-08.blog .blog-area .heading {
+    line-height: 1.1;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.ui-block-08.blog .blog-box {
+    padding: 60px 37px;
+    margin-top: 215px;
+    position: relative;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+}
+
+.ui-block-08.blog .blog-box:hover {
+    background-color: #ff5800;
+}
+
+.ui-block-08.blog .blog-box .box-text {
+    font-size: 18px;
+    text-align: left;
+    position: relative;
+    color: #ffffff;
+}
+
+.ui-block-08.blog .btn {
+    -webkit-appearance: initial;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid transparent;
+    letter-spacing: .5px;
+    line-height: inherit;
+    border-radius: 0;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease !important;
+    transition: all .5s ease !important;
+}
+
+.ui-block-08.blog .btn.btn-red {
+    background: #d43030;
+    border-color: #d43030;
+    color: #ffffff
+}
+
+.ui-block-08.blog .btn.btn-red:hover {
+    background: #fb4700 !important;
+    border-color: #fb4700;
+    color: #ffffff !important
+}
+
+.ui-block-08.blog .btn.btn-medium {
+    font-size: 16px;
+    padding: 10px 42px;
+    line-height: 2em
+}
+
+.ui-block-08.blog .btn.btn-rounded {
+    border-radius: 50px;
+}
+
+@media (min-width: 1800px) {
+    .ui-block-08.blog .blog-box .box-text {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1280px) and (min-width: 992px) {
+    .ui-block-08.blog .blog-box .box-text {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .ui-block-08.blog .blog-area .heading {
+        font-size: 44px;
+    }
+    .ui-block-08.blog .blog-box {
+        margin-top: 0;
+        left: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .ui-block-08.blog .blog-area .heading {
+        font-size: 32px;
+        text-align: center;
+    }
+    .ui-block-08.blog .text {
+        font-size: 14px;
+        text-align: center;
+    }
+    .ui-block-08.blog .btn.btn-medium {
+        font-size: 14px;
+    }
+    .ui-block-08.blog .btn-red {
+        left: 28%;
+    }
+    .ui-block-08.blog .blog-box {
+        margin-top: 10px;
+        width: 94%;
+        left: 16%
+    }
+}

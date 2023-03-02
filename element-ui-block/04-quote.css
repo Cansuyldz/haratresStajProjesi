@@ -1,0 +1,85 @@
+/* ===================================
+     UI-Block-04
+==================================== */
+
+.ui-block-04.quote .height1 {
+    height: 100%;
+}
+
+.ui-block-04.quote .heading {
+    font-size: 17px;
+    font-family: 'Prata', serif;
+}
+
+.ui-block-04.quote .text-black {
+    color: #222;
+}
+
+.ui-block-04.quote .content .main-heading {
+    font-size: 65px;
+    font-family: 'Prata', serif;
+}
+
+.ui-block-04.quote.bg-discount {
+    background-image: url("vendor/img/elements-img/quote-img/ui-block-04-1-quote.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.ui-block-04.quote .overlay-discount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffffff54;
+}
+
+.ui-block-04.quote .btn-slider {
+    padding: 13px 28px;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+    font-size: 15px;
+    font-family: 'Prata', serif;
+    line-height: 17px !important;
+    font-weight: bold;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.ui-block-04.quote .trans-btn {
+    background-color: transparent;
+    color: #222;
+    border: 1px solid #222;
+}
+
+.ui-block-04.quote .trans-btn:hover {
+    background-color: #222;
+    border: 1px solid #222;
+    color: #fff;
+}
+
+@media screen and (width:768px) {
+    .ui-block-04.quote .content .main-heading {
+        font-size: 48px;
+    }
+    .ui-block-04.quote .content .main-heading {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .ui-block-04.quote .heading {
+        font-size: 14px;
+        font-family: 'Prata', serif;
+    }
+    .ui-block-04.quote .content .main-heading {
+        font-size: 37px;
+    }
+}

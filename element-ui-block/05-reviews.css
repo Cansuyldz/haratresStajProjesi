@@ -1,0 +1,79 @@
+/* ===================================
+     UI-Block-05
+==================================== */
+
+.ui-block-05.reviews-sec .heading-area {
+    z-index: 11;
+    top: 50%;
+    position: relative;
+    transform: translate(0, -50%);
+}
+
+.ui-block-05.reviews-sec .heading {
+    display: inline-block;
+    font-size: 72px;
+    color: #202020;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ui-block-05.reviews-sec .heading span {
+    padding: 5px 50px 5px 10px;
+    color: #ffffff;
+    background: #008256;
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .ui-block-05.reviews-sec {
+        text-align: center;
+    }
+    .ui-block-05.reviews-sec .heading {
+        font-size: 60px;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    .ui-block-05.reviews-sec .heading-area {
+        top: 0;
+        width: 60%;
+        margin: 0 auto;
+        transform: translate(0);
+    }
+    .ui-block-05.reviews-sec .client-img-holder {
+        margin: 0 auto;
+    }
+    .ui-block-05.reviews-sec .heading span {
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ui-block-05.reviews-sec {
+        text-align: center;
+    }
+    .ui-block-05.reviews-sec .heading {
+        font-size: 46px;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .ui-block-05.reviews-sec .heading-area {
+        top: 0;
+        transform: translate(0);
+    }
+    .ui-block-05.reviews-sec .heading span {
+        padding: 5px 10px 5px 10px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    video {
+        display: none;
+    }
+}
+
+@media (max-width: 412px) {
+    video {
+        display: none;
+    }
+}

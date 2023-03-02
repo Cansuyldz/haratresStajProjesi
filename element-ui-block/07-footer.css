@@ -1,0 +1,100 @@
+/* ===================================
+   Footer
+====================================== */
+
+.ui-block-07.footer {
+    background: #f2f2f2;
+    padding-top: 20px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer-social a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 48px;
+    border-radius: 50px;
+    font-size: 17px;
+    margin: -10px 10px 0 0;
+    border: 1px solid transparent;
+    -webkit-transition: background-color .2s ease-in-out;
+    -moz-transition: background-color .2s ease-in-out;
+    -ms-transition: background-color .2s ease-in-out;
+    -o-transition: background-color .2s ease-in-out;
+    transition: background-color .2s ease-in-out;
+    overflow: hidden;
+}
+
+.footer-social li:nth-last-child(1) a {
+    margin-right: 0;
+}
+
+.footer-social .youtube-bg-hvr:hover {
+    background: red;
+    color: #ffff;
+}
+
+.footer-social .linkedin-bg-hvr:hover {
+    background: #4267B2;
+    color: #ffff;
+}
+
+.footer-social .instagram-bg-hvr:hover {
+    background: linear-gradient(to bottom, #aa2fb5 0%, #f1762c 93%);
+    color: #ffff;
+}
+
+.ui-block-07.footer .copyright-section {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #000;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ui-block-07.footer .copyright-section .media {
+    display: flex;
+    align-items: center;
+}
+
+.ui-block-07.footer .copyright-section p {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.ui-block-07.footer .copyright-section i {
+    font-size: 25px;
+}
+
+.ui-block-07.footer .copyright-section .media i {
+    margin-right: 15px;
+}
+
+.copyright-section-centered {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .ui-block-07.footer .copyright-section p {
+        display: none;
+    }
+    .copyright-section {
+        flex-direction: column;
+    }
+    .copyright-section .media {
+        padding-left: 10px !important;
+    }
+    .footer-social {
+        justify-content: space-around;
+        margin-top: 50px;
+    }
+}

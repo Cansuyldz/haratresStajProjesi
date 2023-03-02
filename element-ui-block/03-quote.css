@@ -1,0 +1,66 @@
+/* ===================================
+     UI-Block-03
+==================================== */
+
+.ui-block-03.quote.booking .sub-heading {
+    font-size: 15px;
+}
+
+.ui-block-03.quote.booking .main-heading {
+    font-size: 2.2rem;
+}
+
+.ui-block-03.quote .text-white {
+    color: white;
+}
+
+.ui-block-03.quote.booking {
+    padding-top: 80px;
+    padding-bottom: 125px;
+    overflow: hidden;
+}
+
+.ui-block-03.quote.booking .sub-heading {
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px;
+    opacity: .8;
+}
+
+.ui-block-03.quote .trans-btn {
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    padding: 12px 25px 12px 25px;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.ui-block-03.quote .white-btn {
+    border: 2px solid #ffffff;
+    color: #001036;
+    background: #ffffff;
+}
+
+.ui-block-03.quote .white-btn:hover,
+.white-btn:focus {
+    border: 2px solid #ffffff;
+    color: #111520;
+    background-color: #ffffff;
+}
+
+.ui-block-03.quote.booking .main-heading {
+    font-family: 'Oswald', sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+    .ui-block-03.quote.booking .main-heading {
+        font-size: 2.2rem;
+    }
+    .ui-block-03.quote.booking .sub-heading {
+        font-size: 15px;
+    }
+}

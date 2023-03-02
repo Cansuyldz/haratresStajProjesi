@@ -1,0 +1,193 @@
+/* ===================================
+     UI-Block-06
+==================================== */
+
+.team-name-img-1 {
+    margin-top: 5%;
+}
+
+.page-prg {
+    padding: 20px;
+}
+
+.page-prg h3 {
+    color: #001036;
+}
+
+.name-img-2 img {
+    object-fit: cover;
+}
+
+.ui-block-06.team .team-text .sub-heading {
+    font-size: 16px;
+    color: rgb(105, 105, 105);
+    line-height: 1.667;
+}
+
+.ui-block-06.team svg.right-square.team {
+    top: -22px;
+}
+
+.ui-block-06.team .team-owl .owl-nav.disabled {
+    display: block;
+}
+
+.ui-block-06.team .team-owl .owl-nav button.owl-next,
+.ui-block-06.team .team-owl .owl-nav button.owl-prev {
+    font-size: 40px;
+    color: #acacac;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+}
+
+.ui-block-06.team .team-owl .owl-nav button.owl-next:hover,
+.ui-block-06.team v.team-owl .owl-nav button.owl-prev:hover {
+    color: #dabf07;
+}
+
+.ui-block-06.team .team-owl .owl-prev span {
+    position: absolute;
+    left: -3%;
+    top: 37%;
+    font-size: 34px;
+}
+
+.ui-block-06.team .team-owl .owl-next span {
+    position: absolute;
+    right: -3%;
+    top: 37%;
+    font-size: 34px;
+}
+
+.ui-block-06.team .owl-carousel .owl-dots.disabled,
+.ui-block-06.team .owl-carousel .owl-nav.disabled {
+    display: block!important;
+}
+
+.ui-block-06.team .item .team-img {
+    width: 80%;
+    margin: auto;
+}
+
+.ui-block-06.team .item .team-img img {
+    width: 280px;
+    height: 430px;
+}
+
+.ui-block-06.team .team-tittle {
+    padding: 15px 50px 0 50px;
+}
+
+.ui-block-06.team .name-img {
+    position: relative;
+}
+
+.ui-block-06.team .name-img .name {
+    position: absolute;
+    top: 8px;
+    left: 26%;
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    color: #001036;
+    transition: .5s ease;
+}
+
+.ui-block-06.team .team-owl .item:hover {
+    cursor: pointer;
+}
+
+.ui-block-06.team .team-tittle .sub-heading {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.ui-block-06.team .social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.ui-block-06.team .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 33px;
+    background-color: transparent;
+    padding: 9px 0;
+    border-radius: 50%;
+    -webkit-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+
+.ui-block-06.team .social-icons a i {
+    color: #202020;
+}
+
+.ui-block-06.team .social-icons a:hover i {
+    color: #FFFFFF;
+}
+
+.ui-block-06.team .social-icons a.fb:hover {
+    background-color: #3b5998;
+}
+
+.ui-block-06.team .social-icons a.twt:hover {
+    background-color: #00acee;
+}
+
+.ui-block-06.team .social-icons a.drb:hover {
+    background-color: #ea4c89;
+}
+
+.ui-block-06.team .black-img {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.ui-block-06.team .padding-top-half {
+    padding-top: 80px !important;
+}
+
+.ui-block-06.team #team-carousal .item:hover .name-img .black-img {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.ui-block-06.team h1,
+.ui-block-06.team h2,
+.ui-block-06.team h3,
+.ui-block-06.team h4,
+.ui-block-06.team h5,
+.ui-block-06.team h6 {
+    line-height: 1.2;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 0;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .ui-block-06.team .heading {
+        font-size: 40px;
+    }
+    .ui-block-06.team .owl-carousel .owl-dots.disabled,
+    .ui-block-06.team .owl-carousel .owl-nav.disabled {
+        display: none!important;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .ui-block-06.team .heading {
+        font-size: 45px;
+    }
+    .ui-block-06.team .owl-carousel .owl-dots.disabled,
+    .ui-block-06.team .owl-carousel .owl-nav.disabled {
+        display: none!important;
+    }
+}

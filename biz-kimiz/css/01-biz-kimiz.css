@@ -1,0 +1,125 @@
+.bg-biz-kimiz {
+    position: absolute;
+    background: url("../../biz-kimiz/img/bizkimizhead.png");
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    height: 100%;
+    visibility: inherit;
+}
+
+.about-sec-biz-kimiz {
+    margin: auto;
+    width: 80%;
+}
+
+.about-sec-prg {
+    line-height: 29px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 18px;
+}
+
+.about-sec-title {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 15px 0 25px;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+    font-weight: bold;
+}
+
+.biz-kimiz-heading-prg {
+    line-height: 29px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 18px;
+}
+
+.about-sec-btn {
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 10px 42px;
+    background: #ff5800;
+    border-color: #ff5800;
+    color: #ffffff;
+    margin-bottom: 5rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    height: 52px !important;
+    display: block;
+    width: 25%;
+}
+
+.about-sec-btn:hover {
+    background: #001036;
+    color: #fff;
+}
+
+.team-title {
+    font-size: 48px !important;
+    font-weight: 600 !important;
+    margin: 15px 0 25px !important;
+    letter-spacing: 0.5px !important;
+    word-spacing: 0px !important;
+    font-weight: bold !important;
+}
+
+.team-prg {
+    line-height: 29px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    font-size: 18px;
+    margin: 20px 5px;
+}
+
+.team-sec {
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+@media (min-width:375px) and (max-width:412px) {
+    .about-sec-btn {
+        width: 80% !important;
+        margin: 20px 30px;
+    }
+    .no-gutters {
+        flex-direction: column;
+    }
+    .mobile-padding {
+        padding: 0 20px;
+    }
+    .f-direction-colum {
+        flex-direction: column;
+    }
+    .sap-box {
+        top: 0px !important;
+        width: 84% !important;
+        margin: auto !important;
+        left: -18px !important;
+    }
+}
+
+@media (max-width:992px) {
+    .about-sec-btn {
+        width: 41%;
+    }
+}
+
+@media (max-width:768px) {
+    .about-sec-btn {
+        left: 40px;
+        position: relative;
+    }
+    .mobile {
+        bottom: 20px;
+        left: 22%;
+        position: relative;
+    }
+}

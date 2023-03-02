@@ -1,0 +1,103 @@
+.name-img-2 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.name-img-2 img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.team-sec {
+    width: 80%;
+    margin: auto;
+}
+
+.team-title {
+    font-size: 48px;
+    color: #001036;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team-prg {
+    font-size: 20px;
+    text-align: center;
+    margin: 35px 0;
+}
+
+.name-img-2:hover .team-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: 1s;
+}
+
+.name-img-2:hover .social-icons {
+    position: absolute;
+    animation-name: ornek;
+    animation-duration: 1s;
+}
+
+.team-overlay {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: all 250ms;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.ui-block-06.team .social-icons a.fb:hover {
+    background-color: #3b5998;
+}
+
+.ui-block-06.team .page-prg .social-icons {
+    display: none;
+}
+
+@keyframes ornek {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 44%;
+    }
+}
+
+.page-prg {
+    padding: 20px;
+}
+
+.page-prg .name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #001036;
+}
+
+.page-prg .sub-heading {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+@media (max-width:768px) {
+    .ui-block-06.team .page-prg .social-icons {
+        display: block;
+        justify-content: center;
+        display: flex;
+    }
+    .team-overlay {
+        display: none;
+    }
+    .team-title {
+        line-height: 1.1;
+    }
+}

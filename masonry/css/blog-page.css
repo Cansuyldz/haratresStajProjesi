@@ -1,0 +1,239 @@
+.blog-page {
+    width: 100%;
+}
+
+.heading {
+    font-size: 48px;
+    font-family: 'Poppins' !important;
+    color: #001036;
+    font-weight: bold;
+    width: 95%;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.blog-prg {
+    margin-top: 6%;
+    padding: 0px 1%;
+}
+
+.text {
+    text-align: left;
+    font-size: 17px;
+}
+
+.title,
+.date {
+    color: #888888;
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.title-2 {
+    color: #001036;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.etiketler {
+    text-align: left;
+    font-size: 14px;
+    color: #888;
+}
+
+.about {
+    width: 100%;
+    margin: 10px 0px;
+}
+
+.blog-title {
+    color: #001036;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.bilgiler {
+    float: right;
+    padding: 20px;
+}
+
+.baslık {
+    color: #001036;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.social-share span {
+    margin-left: 10px;
+}
+
+.social-share ul {
+    display: flex !important;
+}
+
+.social-share span.f {
+    background-image: url(/agency/img/icons/facebook\ 30.png);
+}
+
+.social-share span.f:hover {
+    background-image: url(/agency/img/icons/facebook\ 30\ turuncu.png);
+}
+
+.social-share span.t {
+    background-image: url(/agency/img/icons/Twitter\ 30.png);
+}
+
+.social-share span.t:hover {
+    background-image: url(/agency/img/icons/Twitter\ 30\ Turuncu.png);
+}
+
+.social-share span.in {
+    background-image: url(/agency/img/icons/Linkedin\ 30.png);
+}
+
+.social-share span.in:hover {
+    background-image: url(/agency/img/icons/Linkedin\ 30\ turuncu.png);
+}
+
+.social-share span.copy {
+    background-image: url(/agency/img/icons/Copy\ 30.png);
+}
+
+.social-share span.copy:hover {
+    background-image: url(/agency/img/icons/Copy\ 30\ Turuncu.png);
+}
+
+.share-icons {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-top: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+    align-items: center;
+}
+
+section {
+    position: relative;
+    padding: 0.5rem 0;
+    overflow: hidden;
+}
+
+.makaleler {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.başlık {
+    color: #001036;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5% 0px;
+}
+
+.boxs {
+    padding: 20px 50px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20%;
+    height: auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+.boxs-prg {
+    color: #001036;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.boxs:hover .boxs-prg {
+    color: #ff5800;
+}
+
+.boxs picture img {
+    width: fit-content;
+}
+
+.boxs:hover p a.news-btn {
+    position: relative;
+    color: #ff5800;
+    animation: moveToRight 1s forwards;
+}
+
+@keyframes moveToRight {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 15px;
+    }
+}
+
+.news-video-btn {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid 1px #6479bf;
+    color: #FFFFFF;
+    background-color: #6479bf;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    -webkit-animation: itg_pulse_blue 1s infinite;
+    -o-animation: itg_pulse_blue 1s infinite;
+    animation: itg_pulse_blue 1s infinite;
+}
+
+.bigger-smaller {
+    float: right;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#t-bigger button {
+    background: #ff5800;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+#t-bigger button:hover,
+#t-smaller button:hover {
+    background: #001036;
+    transition: 1s;
+}
+
+#t-smaller button {
+    background: #ff5800;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 10px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+}

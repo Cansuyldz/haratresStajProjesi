@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* ===================================
+     UI-Block-07 ABOUT
+==================================== */
+
+.ui-block-07.about-sec .heading {
+    font-size: 48px;
+    font-family: 'Poppins' !important;
+    color: #001036;
+    font-weight: bold;
+    width: 95%;
+    margin-bottom: 50px;
+    text-transform: capitalize;
+}
+
+.ui-block-07.about-sec .text {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #202020;
+    margin-bottom: 40px;
+}
+
+.ui-block-07.about-sec .about-details .heading {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ui-block-07.about-sec .sub-heading {
+    color: #d43030;
+    font-size: 16px;
+}
+
+.ui-block-07.about-sec .sub-heading span {
+    display: inline-block;
+    width: 30px;
+    height: 2px;
+    background-color: #202020;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+.ui-block-07.about-sec .about-details .sub-heading span {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.ui-block-07.about-sec .our-about-sec .about-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: .8s ease;
+}
+
+.ui-block-07.about-sec .our-about-sec .about-card .image-holder {
+    margin-bottom: 30px;
+}
+
+.ui-block-07.about-sec .our-about-sec .about-card .image-holder i {
+    font-size: 50px;
+    font-weight: 300;
+    transition: .8s ease;
+}
+
+.ui-block-07.about-sec .our-about-sec .about-card .about-card-heading {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    transition: .8s ease;
+}
+
+.ui-block-07.about-sec .our-about-sec .about-card .about-card-detail {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #202020;
+}
+
+.ui-block-07.about-sec .our-about-sec a {
+    text-decoration: none;
+    color: #202020;
+}
+
+.ui-block-07.about-sec .our-about-sec .about-card:hover {
+    border-radius: 20px;
+    box-shadow: 0 0 15px #e1e1e1;
+    cursor: pointer;
+}
+
+.ui-block-07.about-sec .our-about-sec .about-card:hover .about-card-heading {
+    color: #fb4700;
+}
+
+.ui-block-07.about-sec .our-about-sec .about-card:hover .image-holder {
+    animation: .8s zoomIn;
+}
+
+.ui-block-07.about-sec.bg-gray {
+    background: #ffffff;
+}
+
+.ui-block-07.about-sec .btn.btn-rounded {
+    border-radius: 50px;
+}
+
+.ui-block-07.about-sec .btn.btn-medium {
+    font-size: 16px;
+    padding: 10px 42px;
+    line-height: 2em
+}
+
+.ui-block-07.about-sec .btn.btn-red {
+    background: #d43030;
+    border-color: #d43030;
+    color: #ffffff
+}
+
+.ui-block-07.about-sec .btn.btn-red:hover {
+    background: #fb4700 !important;
+    border-color: #fb4700;
+    color: #ffffff !important
+}
+
+.ui-block-07.about-sec .btn {
+    -webkit-appearance: initial;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 1;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid transparent;
+    letter-spacing: .5px;
+    line-height: inherit;
+    border-radius: 0;
+    width: auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease !important;
+    transition: all .5s ease !important;
+}
+
+@media screen and (max-width: 767px) {
+    .ui-block-07.about-sec .text {
+        font-size: 14px;
+    }
+    .ui-block-07.about-sec .heading {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .ui-block-07.about-sec .heading {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .ui-block-07.about-sec .our-about-sec {
+        padding-top: 70px;
+        overflow: hidden;
+        padding-bottom: 10px;
+    }
+    .ui-block-07.about-sec {
+        text-align: center;
+    }
+    .ui-block-07.about-sec .our-about-sec .about-card {
+        width: 60%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,99 @@
+.btn.button {
+    font-size: 14px !important;
+    padding: 9px 34px !important;
+    line-height: 1.8em !important;
+}
+
+.btn.btn-light-blue {
+    color: #032a58;
+    background: transparent;
+    border-color: #032a58;
+}
+
+.btn.btn-hvr-light-blue:hover,
+.btn.btn-hvr-light-blue:focus {
+    color: #fff;
+    border-color: #032a58;
+    background: transparent !important;
+}
+
+.btn.btn-hvr-light-blue .btn-hvr-light-blue {
+    background: #032a58;
+    border-color: #032a58;
+}
+
+.btn.btn-hvr-light-blue .btn-hvr-effect {
+    background: #032a58;
+    border-color: #032a58;
+}
+
+.contact-section {
+    padding: 120px 0;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.contact-section .contact-form {
+    margin-right: 40px;
+}
+
+.form-control:focus {
+    border-color: #ced4da;
+    box-shadow: 0 0 0 0.0rem transparent;
+}
+
+.contact-section .button {
+    margin-left: 15px;
+    margin-top: 15px;
+    padding-left: 53px !important;
+    padding-right: 53px !important;
+}
+
+.contact-section label {
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.contact-section .media {
+    margin-top: 30px;
+}
+
+.contact-section .media i {
+    font-size: 25px;
+    color: #333333;
+}
+
+.contact-section .media-body {
+    margin-left: 20px;
+}
+
+.contact-section .media-body h5 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #032a58;
+    margin-bottom: 10px;
+}
+
+.contact-section .media-body p {
+    font-size: 14px;
+    font-weight: 300;
+    color: #333333;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+    /*Contact Section*/
+    .contact-section .contact-form {
+        margin-right: 0;
+    }
+}

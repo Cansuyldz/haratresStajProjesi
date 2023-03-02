@@ -1,0 +1,112 @@
+/* ===================================
+     UI-Block-06
+==================================== */
+
+.ui-block-06.counter .counter-content h3,
+.ui-block-06.counter .counter-content h3 span {
+    font-family: Montserrat, sans-serif;
+    font-weight: normal;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 1.5;
+}
+
+.ui-block-06.counter .counter-content p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: normal;
+    width: 95%;
+}
+
+.ui-block-06.counter .counter-content .underline {
+    display: block;
+    margin: 20px 0;
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+.ui-block-06.counter .parallax-box {
+    font-family: 'Roboto', sans-serif;
+}
+
+.ui-block-06.counter .parallax-box i {
+    font-size: 42px;
+    color: #ffffff;
+}
+
+.ui-block-06.counter .parallax-box h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: Montserrat, sans-serif;
+}
+
+.ui-block-06.counter .parallax-box h5 {
+    font-weight: normal;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.ui-block-06.counter.bg-purple {
+    background: #6c30eb;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .ui-block-06.counter .counter-content h3,
+    .ui-block-06.counter .counter-content h3 span {
+        font-size: 28px;
+    }
+    .ui-block-06.counter .parallax-box h5 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .ui-block-06.counter {
+        text-align: left;
+    }
+    .ui-block-06.counter .counter-content span {
+        font-size: 14px;
+    }
+    .ui-block-06.counter .counter-content h3,
+    .ui-block-06.counter .counter-content h3 span {
+        font-size: 24px;
+    }
+    .ui-block-06.counter .parallax-box h2 {
+        font-size: 26px;
+    }
+    .ui-block-06.counter .parallax-box h5 {
+        font-size: 14px;
+    }
+    .ui-block-06.counter .counter-content h3,
+    .ui-block-06.counter .counter-content h3 span {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ui-block-06.counter {
+        text-align: center;
+    }
+    .ui-block-06.counter .counter-content .underline {
+        margin: 20px auto;
+    }
+    .ui-block-06.counter .counter-content span,
+    .ui-block-06.counter .counter-content p {
+        font-size: 14px;
+    }
+    .ui-block-06.counter .counter-content h3,
+    .ui-block-06.counter .counter-content h3 span {
+        font-size: 24px;
+    }
+    .ui-block-06.counter .parallax-box h2 {
+        margin-top: 10px;
+    }
+    .ui-block-06.counter .parallax-box {
+        padding: 40px 0;
+    }
+}

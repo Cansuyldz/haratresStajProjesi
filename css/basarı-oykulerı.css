@@ -1,0 +1,33 @@
+.bg-basari-oykuleri {
+    background: url("../img/basarıoykulericover.png");
+    height: 600px;
+    color: #fff;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 100%;
+    visibility: inherit;
+}
+
+.contents {
+    margin-top: 40px
+}
+
+.contents-prg {
+    color: grey;
+    margin-bottom: 9%;
+}
+
+.contents-title {
+    color: #ff0058;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.baslık-p {
+    margin-top: 20px;
+    color: #ff5800;
+}
