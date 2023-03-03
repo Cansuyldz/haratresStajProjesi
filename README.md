@@ -12,5 +12,7 @@ Staj süresince yaptığm bir web sitesi
 ![8](https://user-images.githubusercontent.com/109664594/222696626-c22dde89-d028-4c26-a688-ca82b3e219da.png)
 ![Ekran görüntüsü 2023-03-02 214652](https://user-images.githubusercontent.com/109664594/222696795-5b6ecb72-2437-4262-9a91-caf6a3cfd5f8.png)
 ![Ekran görüntüsü 2023-03-02 214422](https://user-images.githubusercontent.com/109664594/222696844-b2b4e225-7e66-4dea-9926-f7d0597cd1c9.png)
+
 MOBİL
+
 ![Ekran görüntüsü 2023-03-02 220627](https://user-images.githubusercontent.com/109664594/222696883-6b35129e-a703-4803-bb26-d4e70c26157d.png)
