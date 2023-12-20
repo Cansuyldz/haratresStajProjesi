@@ -1,4 +1,4 @@
-Staj süresince yaptığm bir web sitesi 
+Staj süresince yaptığm bir web sitesi kısım kızım bazı yerlerinde benim bulunduğum bir web sitesi
 
 ![IMG-20230302-WA0045](https://user-images.githubusercontent.com/109664594/222696521-3f5aec9e-d211-4377-8280-b994e75fc60c.jpg)
 ![0](https://user-images.githubusercontent.com/109664594/222696562-c187684f-cd9a-465b-b445-3e4c233b000a.png)
